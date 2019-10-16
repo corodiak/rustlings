@@ -6,7 +6,11 @@
 mod tests {
     #[test]
     fn you_can_assert_eq() {
-        assert_eq!();
+//        assert_eq!("a", "a");
+//        assert_eq!("a", "b");
+//        assert_eq!("a", 4);
+//        assert_eq!(3, 4);
+        assert_eq!(4, 4);
     }
 }
 
