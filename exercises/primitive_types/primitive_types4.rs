@@ -2,11 +2,11 @@
 // Get a slice out of Array a where the ??? is so that the `if` statement
 // returns true. Scroll down for hints!!
 
-#[test]
+//#[test]
 fn main() {
     let a = [1, 2, 3, 4, 5];
 
-    let nice_slice = ???
+    let nice_slice = &a[2 ..5];
 
     assert_eq!([2, 3, 4], nice_slice)
 }

@@ -10,7 +10,9 @@
 mod tests {
     #[test]
     fn you_can_assert() {
-        assert!();
+//        assert!(true);
+//        assert!(false);
+        assert!(5 == 5);
     }
 }
 

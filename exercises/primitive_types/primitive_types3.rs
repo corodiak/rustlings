@@ -3,7 +3,14 @@
 // Scroll down for hints!
 
 fn main() {
-    let a = ???
+//    let a = [1; 100];
+//    let a = ["Hello?"; 100];
+//    Bonus:
+    const SIZE :usize = 100;
+    let mut a : [usize; SIZE] = [0; SIZE];
+    for x in 1..SIZE {
+        a[x] = x;
+    }
 
     if a.len() >= 100 {
         println!("Wow, that's a big array!");
