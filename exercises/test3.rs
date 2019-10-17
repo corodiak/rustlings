@@ -15,14 +15,33 @@ fn string(arg: String) {
 }
 
 fn main() {
-    ("blue");
-    ("red".to_string());
-    (String::from("hi"));
-    ("rust is fun!".to_owned());
-    ("nice weather".into());
-    (format!("Interpolation {}", "Station"));
-    (&String::from("abc")[0..1]);
-    ("  hello there ".trim());
-    ("Happy Monday!".to_string().replace("Mon", "Tues"));
-    ("mY sHiFt KeY iS sTiCkY".to_lowercase());
+    // Standard initialisation
+    string_slice("blue");
+
+    // Creates a String
+    string("red".to_string());
+
+    // Creates a String
+    string(String::from("hi"));
+
+    // Turns the borrowed str into owned, a String
+    string("rust is fun!".to_owned());
+
+    // With '.into()' you can convert values to String
+    string_slice("nice weather".into());
+
+    // Returns a String
+    string(format!("Interpolation {}", "Station"));
+
+    // Creates a String with '::from' but then creates a slice from it
+    string_slice(&String::from("abc")[0..1]);
+
+    // Only trims whitespace before and after str
+    string_slice("  hello there ".trim());
+
+    // Creates a String first, then modifies it
+    string("Happy Monday!".to_string().replace("Mon", "Tues"));
+
+    // Returns lowercase of str as String
+    string("mY sHiFt KeY iS sTiCkY".to_lowercase());
 }
